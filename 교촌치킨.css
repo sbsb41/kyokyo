@@ -1,0 +1,579 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------reset code----------*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#chi1{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 218px;
+}
+
+#chi1 > div:first-child{
+    width: 99px;
+    height: 27px;
+    font-size: 12px;
+    background-color: #F8B915;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#chi1 > div:last-child{
+    width: 99px;
+    height: 27px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header > div > p{
+    width: 480px;
+    height: 135px;
+    background-image: url("https://www.kyochon.com/images/common/h1_logo_new2022.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+}
+
+#chi2 > ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: #9D8F75;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+#chi2 > ul > li{
+    padding: 0px 5px;
+}
+
+#chi2 > ul > li:last-child{
+    margin-right: 40px;
+}
+
+#chi2 > ul > li:not(:last-child){
+   border-right: 1px solid #9D8F75;
+}
+
+#chi3 > ul{
+    display: flex;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 33px;
+    padding: 0 20px;
+    font-weight: 600;
+    color: black;
+}
+
+
+#chi3 > ul > li{
+    display: flex;
+    margin-right: 16px;
+    gap: 16px;
+    align-items: center;
+}
+
+#chi3 > ul > li > a:hover{
+    background-color: #F8B915;
+    border-radius: 16px;
+    padding: 0px 10px;
+}
+
+#chi3 > ul > li:not(:last-child):after{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    display: block;
+}
+
+#ima{
+    width: 1920px;
+    height: 450px;
+    background-image: url("https://www.kyochon.com/uploadFiles/TB_POPUP/pc_banner(12).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 80px 0px;
+    text-align: center;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainmain1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#main1{
+    width: 300px;
+    height: 250px;
+    background-image: url("https://www.kyochon.com/uploadFiles/TB_ITEM/%EA%B5%90%EC%B4%8C+%EB%A0%88%EB%93%9C_list(1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main2,#main4,#main6{
+    width: 144px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 13px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 64px;
+}
+
+#main3{
+    width: 300px;
+    height: 250px;
+    background-image: url("https://www.kyochon.com/uploadFiles/TB_ITEM/%EA%B5%90%EC%B4%8C%EC%88%9C%EC%82%B4_%EC%8D%B8%EB%84%A4%EC%9D%BC(0).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main5{
+    width: 300px;
+    height: 250px;
+    background-image: url("https://www.kyochon.com/uploadFiles/TB_ITEM/%ED%97%88%EB%8B%88%EC%88%9C%EC%82%B4_%EC%8D%B8%EB%84%A4%EC%9D%BC(1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mainmain2{
+    background-color: #ffcb44;
+    display: flex;
+    justify-content: center;
+}
+
+.mainmain2 > div:first-child{
+    width: 600px;
+    height: 437px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+
+#main2-1 > div:first-child{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 57px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+#main2-1 > div:nth-child(2){
+    display: flex;
+    border-bottom: 1px solid white;
+    padding: 0 0 20px 0;
+}
+
+.mainmain2 > div > div > div > input{
+    width: 420px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: #fff;
+}
+
+.mainmain2 > div > div > div > a > div{
+    width: 63px;
+    height: 62px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSEKTtxuz9iyltBaxTZhc50Y3QQs15oiWa5A&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main2-2{
+    display: flex;
+    padding: 20px 0 0 0;
+    gap: 16px;
+}
+
+#main2-2 > div{
+    text-align: center;
+    line-height: 30px;
+}
+
+#main2-2 > div:first-child{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main2-2 > div:not(:first-child){
+    width: 70px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 16px;
+    color: white;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.mainmain2 > div:first-child{
+    border-right: 1px solid white;
+}
+
+.mainmain2 > div:last-child{
+    width: 600px;
+    height: 437px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+
+.mainmain2 > div:last-child >div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 57px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+#main7{
+    width: 145px;
+    height: 145px;
+    background-image: url("https://www.kyochon.com/images/main/ico_happy_event.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: #fff;
+    background-size: auto 64px;
+}
+
+#main8{
+    width: 145px;
+    height: 145px;
+    background-image: url("https://www.kyochon.com/images/main/ico_happy_news.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: #fff;
+    background-size: auto 64px;
+}
+
+.main3-1 > div > div:last-child{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    line-height: 27px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainmain4 > div:first-child{
+    font-size: 26px;
+    line-height: 38px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainmain4 > div:nth-child(2){
+    font-size: 18px;
+    margin: 15px 0;
+    color: #626262;
+    line-height: 27px;
+    text-align: center;
+}
+
+.main4-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main4-1 > div > div:last-child{
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 1.5;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.main4-1 > div > div:last-child:after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("https://www.kyochon.com/images/main/ico_search_blk.svg");
+    display: block;
+    background-position: center;
+    background-size: cover;
+}
+
+#main41{
+    width: 191px;
+    height: 191px;
+    background-image: url("https://www.kyochon.com/images/main/img_item_1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main42{
+    width: 191px;
+    height: 191px;
+    background-image: url("https://www.kyochon.com/images/main/img_item_2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main43{
+    width: 191px;
+    height: 191px;
+    background-image: url("https://www.kyochon.com/images/main/img_item_3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main44{
+    width: 191px;
+    height: 191px;
+    background-image: url("https://www.kyochon.com/images/main/img_item_4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main{
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid gainsboro;
+}
+
+footer{
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#foot1{
+    margin-bottom: 20px;
+}
+
+#foot1 > ul{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+#foot1 > ul > li{
+    padding: 0px 20px 0 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#foot1 > ul > li:not(:last-child){
+    border-right: 1px solid black;
+}
+
+#foot2{
+    margin-bottom: 20px;
+}
+
+#foot2 > div{
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+#foot2 > div > div{ 
+    padding: 0px 20px 0 0;
+    box-sizing: border-box;
+}
+
+#foot2 > div > div:not(:last-child){
+    border-right: 1px solid black;
+}*/
+
+#foot2 > div > div:nth-child(2){
+    display: flex;
+    gap: 16px;
+}
+
+#main11{
+    width: 201px;
+    height: 28px;
+    background-image: url("	https://www.kyochon.com/images/common/ico_callNumber.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main12{
+    width: 40px;
+    height: 40px;
+    background-image: url("	https://www.kyochon.com/images/common/ico_facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main13{
+    width: 40px;
+    height: 40px;
+    background-image: url("https://www.kyochon.com/images/common/ico_insta.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main14{
+    width: 40px;
+    height: 40px;
+    background-image: url("https://www.kyochon.com/images/common/ico_youtube.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main15{
+    width: 40px;
+    height: 40px;
+    background-image: url("https://www.kyochon.com/images/common/ico_twitter.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main16{
+    width: 115px;
+    height: 43px;
+    background-image: url("	https://www.kyochon.com/images/common/ico_franchise.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#foot3 > div > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#foot3 > div:last-child{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+#foot3 > div > ul > li{ 
+    padding: 0px 20px 0 0;
+    box-sizing: border-box;
+}
+
+#foot3 > div > ul > li:not(:last-child){
+    border-right: 1px solid black;
+}
+
